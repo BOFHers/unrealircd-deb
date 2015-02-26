@@ -65,7 +65,7 @@ do_stop()
 		echo "UnrealIRCd was already stopped"
 		return 0
 	fi
-	kill -9 `cat $PIDFILE`
+	kill -9 $(cat $PIDFILE)
 	RETVAL="$?"
 	[ "$RETVAL" = 0 ] && rm -f $PIDFILE
 	return "$RETVAL"
@@ -77,7 +77,7 @@ do_reload() {
 		echo "ERROR: UnrealIRCd is not running"
 		return 1
 	fi
-	kill -1 `cat $PIDFILE`
+	kill -1 $(cat $PIDFILE)
 	return 0
 }
 
@@ -87,7 +87,7 @@ do_restart() {
 		echo "ERROR: UnrealIRCd is not running"
 		return 1
 	fi
-	kill -2 `cat $PIDFILE`
+	kill -2 $(cat $PIDFILE)
 	return 0
 }
 
