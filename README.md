@@ -1,20 +1,9 @@
-This is a script to build unrealircd debian package.
+This is a script to build UnrealIRCd Debian package.
 
 You need to install dh-make, devscripts, and autotools-dev
-in order to build debian package.
+in order to build this.
 
-Run build.sh, then you will get debian package.
+Just run the `build.sh` script and you'll get the package.
 
-After you install this pacakge, you need to write
-your own /etc/unrealircd/unrealircd.conf.
-
----
-
-これは unrealircd の deb パッケージを作るためのスクリプトです。
-
-deb パッケージを作るためには dh-make, devscripts, autotools-dev
-をインストールする必要があります。
-
-build.sh を実行することで、自動的にパッケージが作られます。
-
-インストール後は、 /etc/unrealircd/unrealircd.conf を自分で作成する必要があります。
+After you install this pacakge, you need to create/change
+your own `/etc/unrealircd/unrealircd.conf`.
