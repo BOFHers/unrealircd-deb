@@ -1,6 +1,6 @@
 #!/bin/sh
 LANG=C
-pkgver=3.2.10.2
+pkgver=3.2.10.4
 
 [ ! -e Unreal$pkgver.tar.gz ] && wget http://www.unrealircd.com/downloads/Unreal$pkgver.tar.gz
 [ ! -e pkg ] && mkdir pkg
