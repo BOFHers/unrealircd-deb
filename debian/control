@@ -1,15 +1,14 @@
 Source: unrealircd
 Section: unknown
 Priority: extra
-Maintainer: wacky <wacky@kmc.gr.jp>
+Maintainer: alexandernst <alexandernst@gmail.com>
 Build-Depends: debhelper (>= 8.0.0), autotools-dev
 Standards-Version: 3.9.3
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://git.debian.org/collab-maint/unrealircd.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/unrealircd.git;a=summary
+Homepage: https://www.unrealircd.org/
+Vcs-Git: git@github.com:unrealircd/unrealircd.git
+Vcs-Browser: https://github.com/unrealircd/unrealircd
 
 Package: unrealircd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: UnrealIRCd IRC server
