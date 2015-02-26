@@ -7,5 +7,6 @@ chgrp irc /usr/bin/ircd
 chmod 750 /usr/bin/ircd
 
 chown -R irc:irc /etc/unrealircd
+update-rc.d unrealircd defaults
 
 exit 0
