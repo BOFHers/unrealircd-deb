@@ -1,0 +1,2 @@
+extend-diff-ignore = (^|/)(config\.sub|config\.guess|config\.status|config\.log|Makefile|config\.settings)$"
+
