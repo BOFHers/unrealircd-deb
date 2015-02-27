@@ -10,7 +10,7 @@
 #export DH_VERBOSE=1
 
 override_dh_auto_configure:
-	./configure --with-showlistmodes --with-listen=5 --with-dpath=/etc/unrealircd --with-spath=/usr/bin/ircd --with-nick-history=2000 --with-sendq=3000000 --with-bufferpool=18 --with-permissions=0600 --with-fd-setsize=1024 --enable-dynamic-linking
+	./configure --with-showlistmodes --enable-ssl --enable-ziplinks --with-listen=5 --with-dpath=/etc/unrealircd --with-spath=/usr/bin/ircd --with-nick-history=2000 --with-sendq=3000000 --with-bufferpool=18 --with-permissions=0600 --with-fd-setsize=1024 --enable-dynamic-linking
 
 override_dh_auto_install:
 	make IRCDDIR=debian/unrealircd/etc/unrealircd BINDIR=debian/unrealircd/usr/bin/ircd install
