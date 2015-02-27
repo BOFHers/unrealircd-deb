@@ -6,6 +6,7 @@
 chgrp irc /usr/bin/ircd
 chmod 750 /usr/bin/ircd
 
+touch /etc/unrealircd/ircd.log
 chown -R irc:irc /etc/unrealircd
 update-rc.d unrealircd defaults
 

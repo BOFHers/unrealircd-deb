@@ -54,7 +54,7 @@ do_start()
 		tail -n 5 /etc/unrealircd/ircd.log
 		return 2
 	fi
-	mv /etc/unrealircd/ircd.pid $PIDFILE
+	#mv /etc/unrealircd/ircd.pid $PIDFILE
 	echo "Starting UnrealIRCd"
 	return 0
 }
